@@ -1,3 +1,5 @@
+;;;; Copyright 2013 Paulo Madeira
+
 ;;;; Interface
 
 (cl:in-package #:cl-user)
