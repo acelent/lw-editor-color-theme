@@ -1,6 +1,10 @@
-;;;; Copyright 2013 Paulo Madeira
+;;;; Copyright (C) 2013 Paulo Madeira
+;;;;
+;;;; This Source Code Form is subject to the terms of the Mozilla Public
+;;;; License, v. 2.0. If a copy of the MPL was not distributed with this
+;;;; file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
-;;;; Interface
+;;; Interface
 
 (cl:in-package #:cl-user)
 
@@ -18,14 +22,14 @@
 (in-package #:editor-color-theme)
 
 
-;;;; Configuration
+;;; Configuration
 
 (defvar *foreground-color* nil)
 
 (defvar *background-color* nil)
 
 
-;;;; Implementation
+;;; Implementation
 
 (defvar *all-color-themes* (make-hash-table :test 'string=))
 
@@ -238,5 +242,4 @@
 
 
 ;;; Show presence when loaded
-(pushnew :lw-editor-color-theme *features*)
-
+(pushnew :editor-color-theme *features*)
